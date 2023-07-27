@@ -128,7 +128,7 @@ CREATE TABLE lote_formado_por(
 
 # Crear usuarios
 
-CREATE USER backoffice IDENTIFIED BY "1234";
+CREATE USER backoffice IDENTIFIED BY "1000";
 GRANT SELECT, UPDATE, INSERT ON personas TO backoffice;
 GRANT SELECT, UPDATE, INSERT ON users TO backoffice;
 GRANT SELECT ON personas_roles TO backoffice;
@@ -141,3 +141,13 @@ GRANT SELECT, INSERT ON alojamientos_tipos TO backoffice;
 GRANT SELECT, INSERT, DELETE ON lote_formado_por TO backoffice;
 GRANT SELECT, INSERT ON paquetes TO backoffice;
 GRANT SELECT, INSERT ON lotes TO backoffice;
+
+CREATE USER oauth IDENTIFIED BY "2000";
+GRANT SELECT, INSERT ON users TO oauth;
+GRANT INSERT ON personas TO oauth;
+GRANT INSERT ON conductores TO oauth;
+GRANT INSERT ON administradores TO oauth;
+GRANT INSERT ON funcionarios TO oauth;
+GRANT ALL ON password_resets TO oauth;
+GRANT ALL ON failed_jobs to oauth;
+GRANT ALL ON personal_access_tokens TO oauth;
