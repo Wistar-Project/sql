@@ -1,4 +1,11 @@
+# Crear base de datos
+
+CREATE DATABASE gotruck;
 USE gotruck;
+
+# Crear tablas 
+# ejecutar php artisan migrate
+# en ouath antes de crearlas
 
 CREATE TABLE personas(
     id bigint unsigned primary key,
@@ -51,17 +58,15 @@ CREATE VIEW personas_roles AS
     UNION
     SELECT id, "conductor" rol from conductores;
     
-    CREATE TABLE alojamientos(
+CREATE TABLE alojamientos(
     id serial primary key,
     direccion varchar(100) unique not null,
-    updated_at datetime,
     deleted_at datetime,
     created_at datetime
 );
 
 CREATE TABLE almacenes(
     id bigint unsigned primary key,
-    updated_at datetime,
     deleted_at datetime,
     created_at datetime,
     foreign key (id) references alojamientos(id)
@@ -69,7 +74,6 @@ CREATE TABLE almacenes(
 
 CREATE TABLE sede_hogar(
     id bigint unsigned primary key,
-    updated_at datetime,
     deleted_at datetime,
     created_at datetime,
     foreign key (id) references alojamientos(id)
@@ -77,7 +81,6 @@ CREATE TABLE sede_hogar(
 
 CREATE TABLE sedes(
     id bigint unsigned primary key,
-    updated_at datetime,
     deleted_at datetime,
     created_at datetime,
     foreign key (id) references sede_hogar(id)
@@ -85,7 +88,6 @@ CREATE TABLE sedes(
 
 CREATE TABLE hogares(
     id bigint unsigned primary key,
-    updated_at datetime,
     deleted_at datetime,
     created_at datetime,
     foreign key (id) references sede_hogar(id)
@@ -101,7 +103,6 @@ CREATE TABLE paquetes(
     id serial primary key,
     peso_en_kg smallint not null,
     destino bigint unsigned not null,
-    updated_at datetime,
     deleted_at datetime,
     created_at datetime,
     foreign key (destino) references sede_hogar(id)
@@ -110,7 +111,6 @@ CREATE TABLE paquetes(
 CREATE TABLE lotes(
     id serial primary key,
     destino bigint unsigned not null,
-    updated_at datetime,
     deleted_at datetime,
     created_at datetime,
     foreign key (destino) references sedes(id)
