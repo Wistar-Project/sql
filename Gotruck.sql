@@ -125,3 +125,19 @@ CREATE TABLE lote_formado_por(
     foreign key (id_paquete) references paquetes(id),
     primary key (id_lote, id_paquete)
 );
+
+# Crear usuarios
+
+CREATE USER backoffice IDENTIFIED BY "1234";
+GRANT SELECT, UPDATE, INSERT ON personas TO backoffice;
+GRANT SELECT, UPDATE, INSERT ON users TO backoffice;
+GRANT SELECT ON personas_roles TO backoffice;
+GRANT SELECT, INSERT ON alojamientos TO backoffice;
+GRANT INSERT ON sede_hogar TO backoffice;
+GRANT INSERT ON sedes TO backoffice;
+GRANT INSERT ON hogares TO backoffice;
+GRANT INSERT ON almacenes TO backoffice;
+GRANT SELECT, INSERT ON alojamientos_tipos TO backoffice;
+GRANT SELECT, INSERT, DELETE ON lote_formado_por TO backoffice;
+GRANT SELECT, INSERT ON paquetes TO backoffice;
+GRANT SELECT, INSERT ON lotes TO backoffice;
