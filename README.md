@@ -1,1 +1,2 @@
-"# sql" 
+# sql 
+El sql del proyecto
