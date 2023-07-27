@@ -151,3 +151,10 @@ GRANT INSERT ON funcionarios TO oauth;
 GRANT ALL ON password_resets TO oauth;
 GRANT ALL ON failed_jobs to oauth;
 GRANT ALL ON personal_access_tokens TO oauth;
+
+CREATE USER almacen IDENTIFIED BY "3000";
+GRANT SELECT, INSERT ON paquetes TO almacen;
+GRANT SELECT ON sede_hogar TO almacen;
+GRANT SELECT, INSERT ON lotes TO almacen;
+GRANT SELECT ON sedes TO almacen;
+GRANT INSERT ON lote_formado_por TO almacen;
