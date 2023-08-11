@@ -125,3 +125,42 @@ CREATE TABLE lote_formado_por(
     foreign key (id_paquete) references paquetes(id),
     primary key (id_lote, id_paquete)
 );
+
+# Crear usuarios
+
+CREATE USER backoffice@localhost IDENTIFIED BY "1234";
+GRANT SELECT, UPDATE, INSERT ON personas TO backoffice@localhost;
+GRANT SELECT, UPDATE, INSERT ON users TO backoffice@localhost;
+GRANT SELECT ON personas_roles TO backoffice@localhost;
+GRANT SELECT, INSERT ON alojamientos TO backoffice@localhost;
+GRANT INSERT ON sede_hogar TO backoffice@localhost;
+GRANT INSERT ON sedes TO backoffice@localhost;
+GRANT INSERT ON hogares TO backoffice@localhost;
+GRANT INSERT ON almacenes TO backoffice@localhost;
+GRANT SELECT, INSERT ON alojamientos_tipos TO backoffice@localhost;
+GRANT SELECT, INSERT, DELETE ON lote_formado_por TO backoffice@localhost;
+GRANT SELECT, INSERT ON paquetes TO backoffice@localhost;
+GRANT SELECT, INSERT ON lotes TO backoffice@localhost;
+
+CREATE USER oauth@localhost IDENTIFIED BY "9876";
+GRANT SELECT, INSERT ON users TO oauth@localhost;
+GRANT INSERT, SELECT ON personas TO oauth@localhost;
+GRANT INSERT ON conductores TO oauth@localhost;
+GRANT INSERT ON administradores TO oauth@localhost;
+GRANT INSERT ON funcionarios TO oauth@localhost;
+GRANT ALL ON password_resets TO oauth@localhost;
+GRANT ALL ON failed_jobs TO oauth@localhost;
+GRANT ALL ON personal_access_tokens TO oauth@localhost;
+GRANT ALL ON migrations TO oauth@localhost;
+GRANT ALL ON oauth_access_tokens TO oauth@localhost;
+GRANT ALL ON oauth_auth_codes TO oauth@localhost;
+GRANT ALL ON oauth_clients TO oauth@localhost;
+GRANT ALL ON oauth_personal_access_clients TO oauth@localhost;
+GRANT ALL ON oauth_refresh_tokens TO oauth@localhost;
+
+CREATE USER almacen@localhost IDENTIFIED BY "abcd";
+GRANT SELECT, INSERT ON paquetes TO almacen@localhost;
+GRANT SELECT ON sede_hogar TO almacen@localhost;
+GRANT SELECT, INSERT ON lotes TO almacen@localhost;
+GRANT SELECT ON sedes TO almacen@localhost;
+GRANT INSERT ON lote_formado_por TO almacen@localhost;
