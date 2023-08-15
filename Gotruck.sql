@@ -51,7 +51,7 @@ CREATE VIEW personas_roles AS
     UNION
     SELECT id, "conductor" rol from conductores;
     
-    CREATE TABLE alojamientos(
+CREATE TABLE alojamientos(
     id serial primary key,
     direccion varchar(100) unique not null,
     updated_at datetime,
@@ -126,6 +126,44 @@ CREATE TABLE lote_formado_por(
     primary key (id_lote, id_paquete)
 );
 
+CREATE TABLE vehiculos(
+	id serial primary key,
+	capacidad_en_toneladas smallint not null,
+	updated_at datetime,
+    created_at datetime,
+    deleted_at datetime
+);
+
+CREATE TABLE camiones(
+	id_vehiculo bigint unsigned primary key,
+	foreign key (id_vehiculo) references vehiculos(id)
+);
+
+CREATE TABLE pickups(
+	id_vehiculo bigint unsigned primary key,
+	foreign key (id_vehiculo) references vehiculos(id)
+);
+
+CREATE TABLE lote_asignado_a_camion(
+	id_lote bigint unsigned primary key,
+    id_camion bigint unsigned not null,
+	updated_at datetime,
+    created_at datetime,
+    deleted_at datetime,
+    foreign key (id_lote) references lotes(id),
+    foreign key (id_camion) references camiones(id_vehiculo)
+);
+
+CREATE TABLE paquete_asignado_a_pickup(
+	id_paquete bigint unsigned primary key,
+    id_pickup bigint unsigned not null,
+	updated_at datetime,
+    created_at datetime,
+    deleted_at datetime,
+    foreign key (id_paquete) references lotes(id),
+    foreign key (id_pickup) references pickups(id_vehiculo)
+);
+
 # Crear usuarios
 
 CREATE USER backoffice@localhost IDENTIFIED BY "1234";
@@ -163,4 +201,6 @@ GRANT SELECT, INSERT ON paquetes TO almacen@localhost;
 GRANT SELECT ON sede_hogar TO almacen@localhost;
 GRANT SELECT, INSERT ON lotes TO almacen@localhost;
 GRANT SELECT ON sedes TO almacen@localhost;
-GRANT INSERT ON lote_formado_por TO almacen@localhost;
+GRANT SELECT, INSERT ON lote_formado_por TO almacen@localhost;
+GRANT SELECT ON alojamientos TO almacen@localhost;
+GRANT SELECT ON lote_asignado_a_camion TO almacen@localhost;
