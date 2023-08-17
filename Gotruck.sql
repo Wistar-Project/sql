@@ -164,6 +164,16 @@ CREATE TABLE paquete_asignado_a_pickup(
     foreign key (id_pickup) references pickups(id_vehiculo)
 );
 
+CREATE TABLE traducciones(
+	id bigint,
+    texto varchar(1000) not null,
+    idioma enum('es', 'en'),
+    primary key (id, idioma)
+);
+
+INSERT INTO traducciones VALUES (1, "Hola buenos días", "es");
+INSERT INTO traducciones VALUES (1, "Hello good morning", "en");
+
 # Crear usuarios
 
 CREATE USER backoffice@localhost IDENTIFIED BY "1234";
