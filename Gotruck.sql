@@ -171,8 +171,13 @@ CREATE TABLE traducciones(
     primary key (id, idioma)
 );
 
-INSERT INTO traducciones VALUES (1, "Hola buenos días", "es");
-INSERT INTO traducciones VALUES (1, "Hello good morning", "en");
+/* FOOTER */
+INSERT INTO traducciones VALUES (1, "Política y privacidad", "es");
+INSERT INTO traducciones VALUES (1, "Policy and privacy", "en");
+INSERT INTO traducciones VALUES (2, "Contacto", "es");
+INSERT INTO traducciones VALUES (2, "Contact", "en");
+INSERT INTO traducciones VALUES (3, "Todos los derechos reservados", "es");
+INSERT INTO traducciones VALUES (3, "All rights reserved", "en");
 
 # Crear usuarios
 
