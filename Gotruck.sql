@@ -179,6 +179,18 @@ INSERT INTO traducciones VALUES (2, "Contact", "en");
 INSERT INTO traducciones VALUES (3, "Todos los derechos reservados", "es");
 INSERT INTO traducciones VALUES (3, "All rights reserved", "en");
 
+/* PÁGINA DE INICIO DE SESIÓN */
+INSERT INTO traducciones VALUES (4, "Iniciar sesión", "es");
+INSERT INTO traducciones VALUES (4, "Log in", "en");
+INSERT INTO traducciones VALUES (5, "Datos para iniciar sesión", "es");
+INSERT INTO traducciones VALUES (5, "Login information", "en");
+INSERT INTO traducciones VALUES (6, "Inicie sesión para acceder al sitio", "es");
+INSERT INTO traducciones VALUES (6, "Log in to access the site", "en");
+INSERT INTO traducciones VALUES (7, "Contraseña", "es");
+INSERT INTO traducciones VALUES (7, "Password", "en");
+INSERT INTO traducciones VALUES (8, "Ha ocurrido un error. Revise los campos por favor.", "es");
+INSERT INTO traducciones VALUES (8, "An error has ocurred. Please check your input.", "en");
+
 # Crear usuarios
 
 CREATE USER backoffice@localhost IDENTIFIED BY "1234";
