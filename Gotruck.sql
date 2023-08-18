@@ -195,6 +195,24 @@ INSERT INTO traducciones VALUES (303, "Password", "en");
 INSERT INTO traducciones VALUES (304, "Ha ocurrido un error. Revise los campos por favor.", "es");
 INSERT INTO traducciones VALUES (304, "An error has ocurred. Please check your input.", "en");
 
+/* PÁGINA PRINCIPAL */
+INSERT INTO traducciones VALUES (400, "Aplicaciones", "es");
+INSERT INTO traducciones VALUES (400, "Applications", "en");
+INSERT INTO traducciones VALUES (401, "Seguimiento", "es");
+INSERT INTO traducciones VALUES (401, "Tracking", "en");
+INSERT INTO traducciones VALUES (402, "Ve el estado de una entrega buscándola por su id.", "es");
+INSERT INTO traducciones VALUES (402, "View the status of a delivery by searching its id.", "en");
+INSERT INTO traducciones VALUES (403, "Choferes", "es");
+INSERT INTO traducciones VALUES (403, "Drivers", "en");
+INSERT INTO traducciones VALUES (404, "Visualiza las entregas pendientes y el trayecto hacia la sede más cercana.", "es");
+INSERT INTO traducciones VALUES (404, "View pending deliveries and the route to the nearest location.", "en");
+INSERT INTO traducciones VALUES (405, "Almacén", "es");
+INSERT INTO traducciones VALUES (405, "Warehouse", "en");
+INSERT INTO traducciones VALUES (406, "Gestiona lotes con sus paquetes y asígnalos a un camión para ser entregados.", "es");
+INSERT INTO traducciones VALUES (406, "Manage batches with your packages and assign them to a truck for delivery.", "en");
+INSERT INTO traducciones VALUES (407, "Administración", "es");
+INSERT INTO traducciones VALUES (407, "Administration", "en");
+
 # Crear usuarios
 
 CREATE USER backoffice@localhost IDENTIFIED BY "1234";
