@@ -212,6 +212,8 @@ INSERT INTO traducciones VALUES (406, "Gestiona lotes con sus paquetes y asígna
 INSERT INTO traducciones VALUES (406, "Manage batches with your packages and assign them to a truck for delivery.", "en");
 INSERT INTO traducciones VALUES (407, "Administración", "es");
 INSERT INTO traducciones VALUES (407, "Administration", "en");
+INSERT INTO traducciones VALUES (408, "Adéntrese en el mundo corporativo y gestione su equipo de trabajo.", "es");
+INSERT INTO traducciones VALUES (408, "Join the corporate world and manage your team.", "en");
 
 # Crear usuarios
 
