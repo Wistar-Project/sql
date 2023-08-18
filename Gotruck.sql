@@ -171,25 +171,29 @@ CREATE TABLE traducciones(
     primary key (id, idioma)
 );
 
+/* HEADER */
+INSERT INTO traducciones VALUES (100, "Cerrar sesión", "es");
+INSERT INTO traducciones VALUES (100, "Sign out", "en");
+
 /* FOOTER */
-INSERT INTO traducciones VALUES (1, "Política y privacidad", "es");
-INSERT INTO traducciones VALUES (1, "Policy and privacy", "en");
-INSERT INTO traducciones VALUES (2, "Contacto", "es");
-INSERT INTO traducciones VALUES (2, "Contact", "en");
-INSERT INTO traducciones VALUES (3, "Todos los derechos reservados", "es");
-INSERT INTO traducciones VALUES (3, "All rights reserved", "en");
+INSERT INTO traducciones VALUES (200, "Política y privacidad", "es");
+INSERT INTO traducciones VALUES (200, "Policy and privacy", "en");
+INSERT INTO traducciones VALUES (201, "Contacto", "es");
+INSERT INTO traducciones VALUES (201, "Contact", "en");
+INSERT INTO traducciones VALUES (202, "Todos los derechos reservados", "es");
+INSERT INTO traducciones VALUES (202, "All rights reserved", "en");
 
 /* PÁGINA DE INICIO DE SESIÓN */
-INSERT INTO traducciones VALUES (4, "Iniciar sesión", "es");
-INSERT INTO traducciones VALUES (4, "Log in", "en");
-INSERT INTO traducciones VALUES (5, "Datos para iniciar sesión", "es");
-INSERT INTO traducciones VALUES (5, "Login information", "en");
-INSERT INTO traducciones VALUES (6, "Inicie sesión para acceder al sitio", "es");
-INSERT INTO traducciones VALUES (6, "Log in to access the site", "en");
-INSERT INTO traducciones VALUES (7, "Contraseña", "es");
-INSERT INTO traducciones VALUES (7, "Password", "en");
-INSERT INTO traducciones VALUES (8, "Ha ocurrido un error. Revise los campos por favor.", "es");
-INSERT INTO traducciones VALUES (8, "An error has ocurred. Please check your input.", "en");
+INSERT INTO traducciones VALUES (300, "Iniciar sesión", "es");
+INSERT INTO traducciones VALUES (300, "Log in", "en");
+INSERT INTO traducciones VALUES (301, "Datos para iniciar sesión", "es");
+INSERT INTO traducciones VALUES (301, "Login information", "en");
+INSERT INTO traducciones VALUES (302, "Inicie sesión para acceder al sitio", "es");
+INSERT INTO traducciones VALUES (302, "Log in to access the site", "en");
+INSERT INTO traducciones VALUES (303, "Contraseña", "es");
+INSERT INTO traducciones VALUES (303, "Password", "en");
+INSERT INTO traducciones VALUES (304, "Ha ocurrido un error. Revise los campos por favor.", "es");
+INSERT INTO traducciones VALUES (304, "An error has ocurred. Please check your input.", "en");
 
 # Crear usuarios
 
@@ -231,3 +235,6 @@ GRANT SELECT ON sedes TO almacen@localhost;
 GRANT SELECT, INSERT ON lote_formado_por TO almacen@localhost;
 GRANT SELECT ON alojamientos TO almacen@localhost;
 GRANT SELECT ON lote_asignado_a_camion TO almacen@localhost;
+
+CREATE USER traductor@localhost IDENTIFIED BY "qwer";
+GRANT SELECT ON traducciones TO traductor@localhost;
