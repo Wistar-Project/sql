@@ -171,6 +171,10 @@ CREATE TABLE traducciones(
     primary key (id, idioma)
 );
 
+/* TITULOS */
+INSERT INTO traducciones VALUES (1, "GoTruck - Iniciar sesión", "es");
+INSERT INTO traducciones VALUES (1, "GoTruck - Log in", "en");
+
 /* HEADER */
 INSERT INTO traducciones VALUES (100, "Cerrar sesión", "es");
 INSERT INTO traducciones VALUES (100, "Sign out", "en");
