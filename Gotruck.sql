@@ -241,6 +241,8 @@ GRANT INSERT, SELECT ON personas TO oauth@localhost;
 GRANT INSERT ON conductores TO oauth@localhost;
 GRANT INSERT ON administradores TO oauth@localhost;
 GRANT INSERT ON funcionarios TO oauth@localhost;
+GRANT SELECT ON personas_roles TO oauth@localhost;
+GRANT INSERT ON gerentes TO oauth@localhost;
 GRANT ALL ON password_resets TO oauth@localhost;
 GRANT ALL ON failed_jobs TO oauth@localhost;
 GRANT ALL ON personal_access_tokens TO oauth@localhost;
