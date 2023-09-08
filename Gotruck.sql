@@ -83,6 +83,7 @@ CREATE VIEW alojamientos_tipos AS
 CREATE TABLE paquetes(
     id serial primary key,
     peso_en_kg smallint not null,
+    email varchar(70) not null,
     destino bigint unsigned not null,
     updated_at datetime,
     deleted_at datetime,
