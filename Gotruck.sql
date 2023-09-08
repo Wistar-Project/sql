@@ -100,13 +100,12 @@ CREATE TABLE lotes(
 );
 
 CREATE TABLE lote_formado_por(
+	id_paquete bigint unsigned primary key,
     id_lote bigint unsigned not null,
-    id_paquete bigint unsigned not null,
     updated_at datetime,
     created_at datetime,
     foreign key (id_lote) references lotes(id),
-    foreign key (id_paquete) references paquetes(id),
-    primary key (id_lote, id_paquete)
+    foreign key (id_paquete) references paquetes(id)
 );
 
 CREATE TABLE vehiculos(
