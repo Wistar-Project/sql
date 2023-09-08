@@ -216,9 +216,7 @@ GRANT SELECT, UPDATE, INSERT ON personas TO backoffice@localhost;
 GRANT SELECT, UPDATE, INSERT ON users TO backoffice@localhost;
 GRANT SELECT ON personas_roles TO backoffice@localhost;
 GRANT SELECT, INSERT ON alojamientos TO backoffice@localhost;
-GRANT INSERT ON sede_hogar TO backoffice@localhost;
 GRANT INSERT ON sedes TO backoffice@localhost;
-GRANT INSERT ON hogares TO backoffice@localhost;
 GRANT INSERT ON almacenes TO backoffice@localhost;
 GRANT SELECT, INSERT ON alojamientos_tipos TO backoffice@localhost;
 GRANT SELECT, INSERT, DELETE ON lote_formado_por TO backoffice@localhost;
@@ -245,7 +243,6 @@ GRANT ALL ON oauth_refresh_tokens TO oauth@localhost;
 
 CREATE USER almacen@localhost IDENTIFIED BY "abcd";
 GRANT SELECT, INSERT ON paquetes TO almacen@localhost;
-GRANT SELECT ON sede_hogar TO almacen@localhost;
 GRANT SELECT, INSERT ON lotes TO almacen@localhost;
 GRANT SELECT ON sedes TO almacen@localhost;
 GRANT SELECT, INSERT ON lote_formado_por TO almacen@localhost;
