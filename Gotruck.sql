@@ -67,7 +67,7 @@ CREATE TABLE almacenes(
     foreign key (id) references alojamientos(id)
 );
 
-CREATE TABLE sede_hogar(
+CREATE TABLE sedes(
     id bigint unsigned primary key,
     updated_at datetime,
     deleted_at datetime,
@@ -75,27 +75,10 @@ CREATE TABLE sede_hogar(
     foreign key (id) references alojamientos(id)
 );
 
-CREATE TABLE sedes(
-    id bigint unsigned primary key,
-    updated_at datetime,
-    deleted_at datetime,
-    created_at datetime,
-    foreign key (id) references sede_hogar(id)
-);
-
-CREATE TABLE hogares(
-    id bigint unsigned primary key,
-    updated_at datetime,
-    deleted_at datetime,
-    created_at datetime,
-    foreign key (id) references sede_hogar(id)
-);
 CREATE VIEW alojamientos_tipos AS
     SELECT id, "sede" tipo from sedes
     UNION
-    SELECT id, "almacén" tipo from almacenes
-    UNION
-    SELECT id, "hogar" tipo from hogares;
+    SELECT id, "almacén" tipo from almacenes;
     
 CREATE TABLE paquetes(
     id serial primary key,
@@ -104,7 +87,7 @@ CREATE TABLE paquetes(
     updated_at datetime,
     deleted_at datetime,
     created_at datetime,
-    foreign key (destino) references sede_hogar(id)
+    foreign key (destino) references sedes(id)
 );
 
 CREATE TABLE lotes(
