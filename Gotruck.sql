@@ -122,6 +122,13 @@ CREATE TABLE camiones(
 	foreign key (id_vehiculo) references vehiculos(id)
 );
 
+CREATE TABLE conductor_maneja(
+	id_conductor bigint unsigned primary key,
+    id_vehiculo bigint unsigned not null,
+    foreign key (id_vehiculo) references vehiculos(id),
+    foreign key (id_conductor) references conductores(id)
+);
+
 CREATE TABLE pickups(
 	id_vehiculo bigint unsigned primary key,
 	foreign key (id_vehiculo) references vehiculos(id)
