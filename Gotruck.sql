@@ -150,7 +150,7 @@ CREATE TABLE paquete_asignado_a_pickup(
 	updated_at datetime,
     created_at datetime,
     deleted_at datetime,
-    foreign key (id_paquete) references lotes(id),
+    foreign key (id_paquete) references paquetes(id),
     foreign key (id_pickup) references pickups(id_vehiculo)
 );
 
