@@ -4,41 +4,41 @@ CREATE TABLE personas(
     id bigint unsigned primary key,
     nombre varchar(50) not null,
     apellido varchar(50) not null,
-    updated_at datetime,
-    deleted_at datetime,
-    created_at datetime,
-	foreign key (id) references users (id)
+    updated_at datetime,-- por laravel
+    deleted_at datetime,-- por laravel
+    created_at datetime, -- por laravel
+	foreign key (id) references users (id) -- la tabla de users sale de laravel
 );
 
 CREATE TABLE gerentes(
     id bigint unsigned primary key,
-    updated_at datetime,
-    deleted_at datetime,
-    created_at datetime,
+    updated_at datetime,-- por laravel
+    deleted_at datetime,-- por laravel
+    created_at datetime,-- por laravel
     foreign key (id) references personas(id)
 );
 
 CREATE TABLE administradores(
     id bigint unsigned primary key,
-    updated_at datetime,
-    deleted_at datetime,
-    created_at datetime,
+    updated_at datetime,-- por laravel
+    deleted_at datetime,-- por laravel
+    created_at datetime,-- por laravel
     foreign key (id) references personas(id)
 );
 
 CREATE TABLE conductores(
     id bigint unsigned primary key,
-    updated_at datetime,
-    deleted_at datetime,
-    created_at datetime,
+    updated_at datetime,-- por laravel
+    deleted_at datetime,-- por laravel
+    created_at datetime,-- por laravel
     foreign key (id) references personas(id)
 );
 
 CREATE TABLE funcionarios(
     id bigint unsigned primary key,
-    updated_at datetime,
-    deleted_at datetime,
-    created_at datetime,
+    updated_at datetime,-- por laravel
+    deleted_at datetime,-- por laravel
+    created_at datetime,-- por laravel
     foreign key (id) references personas(id)
 );
 
@@ -54,24 +54,24 @@ CREATE VIEW personas_roles AS
 CREATE TABLE alojamientos(
     id serial primary key,
     direccion varchar(100) unique not null,
-    updated_at datetime,
-    deleted_at datetime,
-    created_at datetime
+    updated_at datetime,-- por laravel
+    deleted_at datetime,-- por laravel
+    created_at datetime-- por laravel
 );
 
 CREATE TABLE almacenes(
     id bigint unsigned primary key,
-    updated_at datetime,
-    deleted_at datetime,
-    created_at datetime,
+    updated_at datetime,-- por laravel
+    deleted_at datetime,-- por laravel
+    created_at datetime,-- por laravel
     foreign key (id) references alojamientos(id)
 );
 
 CREATE TABLE sedes(
     id bigint unsigned primary key,
-    updated_at datetime,
-    deleted_at datetime,
-    created_at datetime,
+    updated_at datetime,-- por laravel
+    deleted_at datetime,-- por laravel
+    created_at datetime,-- por laravel
     foreign key (id) references alojamientos(id)
 );
 
@@ -85,26 +85,26 @@ CREATE TABLE paquetes(
     peso_en_kg smallint not null,
     email varchar(70) not null,
     destino bigint unsigned not null,
-    updated_at datetime,
-    deleted_at datetime,
-    created_at datetime,
+    updated_at datetime,-- por laravel
+    deleted_at datetime,-- por laravel
+    created_at datetime,-- por laravel
     foreign key (destino) references sedes(id)
 );
 
 CREATE TABLE lotes(
     id serial primary key,
     destino bigint unsigned not null,
-    updated_at datetime,
-    deleted_at datetime,
-    created_at datetime,
+    updated_at datetime,-- por laravel
+    deleted_at datetime,-- por laravel
+    created_at datetime,-- por laravel
     foreign key (destino) references sedes(id)
 );
 
 CREATE TABLE lote_formado_por(
 	id_paquete bigint unsigned primary key,
     id_lote bigint unsigned not null,
-    updated_at datetime,
-    created_at datetime,
+    updated_at datetime,-- por laravel
+    created_at datetime,-- por laravel
     foreign key (id_lote) references lotes(id),
     foreign key (id_paquete) references paquetes(id)
 );
@@ -112,9 +112,9 @@ CREATE TABLE lote_formado_por(
 CREATE TABLE vehiculos(
 	id serial primary key,
 	capacidad_en_toneladas smallint not null,
-	updated_at datetime,
-    created_at datetime,
-    deleted_at datetime
+	updated_at datetime,-- por laravel
+    created_at datetime,-- por laravel
+    deleted_at datetime-- por laravel
 );
 
 CREATE TABLE camiones(
@@ -137,9 +137,9 @@ CREATE TABLE pickups(
 CREATE TABLE lote_asignado_a_camion(
 	id_lote bigint unsigned primary key,
     id_camion bigint unsigned not null,
-	updated_at datetime,
-    created_at datetime,
-    deleted_at datetime,
+	updated_at datetime,-- por laravel
+    created_at datetime,-- por laravel
+    deleted_at datetime,-- por laravel
     foreign key (id_lote) references lotes(id),
     foreign key (id_camion) references camiones(id_vehiculo)
 );
@@ -147,9 +147,9 @@ CREATE TABLE lote_asignado_a_camion(
 CREATE TABLE paquete_asignado_a_pickup(
 	id_paquete bigint unsigned primary key,
     id_pickup bigint unsigned not null,
-	updated_at datetime,
-    created_at datetime,
-    deleted_at datetime,
+	updated_at datetime,-- por laravel
+    created_at datetime,-- por laravel
+    deleted_at datetime,-- por laravel
     foreign key (id_paquete) references paquetes(id),
     foreign key (id_pickup) references pickups(id_vehiculo)
 );
