@@ -222,6 +222,9 @@ GRANT SELECT, INSERT ON alojamientos_tipos TO backoffice@localhost;
 GRANT SELECT, INSERT, DELETE ON lote_formado_por TO backoffice@localhost;
 GRANT SELECT, INSERT ON paquetes TO backoffice@localhost;
 GRANT SELECT, INSERT ON lotes TO backoffice@localhost;
+GRANT SELECT ON conductores TO backoffice@localhost;
+GRANT SELECT, INSERT ON conductor_maneja TO backoffice@localhost;
+GRANT SELECT ON vehiculos TO backoffice@localhost;
 
 CREATE USER oauth@localhost IDENTIFIED BY "9876";
 GRANT SELECT, INSERT ON users TO oauth@localhost;
