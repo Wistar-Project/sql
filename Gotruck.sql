@@ -154,6 +154,11 @@ CREATE TABLE paquete_asignado_a_pickup(
     foreign key (id_pickup) references pickups(id_vehiculo)
 );
 
+CREATE VIEW vehiculos_tipos AS
+    SELECT id_vehiculo, "camión" tipo from camiones
+    UNION
+    SELECT id_vehiculo, "pickup" tipo from pickups;
+
 CREATE TABLE traducciones(
 	id bigint,
     texto varchar(1000) not null,
