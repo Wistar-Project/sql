@@ -219,6 +219,8 @@ INSERT INTO traducciones VALUES (408, "Adéntrese en el mundo corporativo y gest
 INSERT INTO traducciones VALUES (408, "Join the corporate world and manage your team.", "en");
 
 /* ALMACEN */
+INSERT INTO traducciones VALUES (409, "GoTruck - Almacenes", "es");
+INSERT INTO traducciones VALUES (409, "GoTruck - Warehouses", "en");
 INSERT INTO traducciones VALUES (410, "Almacenes", "es");
 INSERT INTO traducciones VALUES (410 , "Warehouses", "en");
 INSERT INTO traducciones VALUES (411 , "Lotes", "es");
