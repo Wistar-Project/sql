@@ -232,15 +232,15 @@ INSERT INTO traducciones VALUES (413, "Packages", "en");
 INSERT INTO traducciones VALUES (414, "Administra los paquetes de las almacenes.", "es");
 INSERT INTO traducciones VALUES (414, "Manage warehouse packages.", "en");
 
-/* LOTES */
+/* ALMACÉN-LOTES */
 INSERT INTO traducciones VALUES (416, "Crear", "es");
 INSERT INTO traducciones VALUES (416, "Create", "en");
 INSERT INTO traducciones VALUES (417, "Lotes", "es");
 INSERT INTO traducciones VALUES (417, "Batches", "en");
 INSERT INTO traducciones VALUES (418, "Información", "es");
 INSERT INTO traducciones VALUES (418, "Information", "en");
-INSERT INTO traducciones VALUES (419, "Id del lote:", "es");
-INSERT INTO traducciones VALUES (419, "Batch Id:", "en");
+INSERT INTO traducciones VALUES (419, "ID del lote:", "es");
+INSERT INTO traducciones VALUES (419, "Batch ID:", "en");
 INSERT INTO traducciones VALUES (420, "Peso (kg):", "es");
 INSERT INTO traducciones VALUES (420, "Weight (kg):", "en");
 INSERT INTO traducciones VALUES (421, "Vehiculo asignado:", "es");
@@ -259,11 +259,11 @@ INSERT INTO traducciones VALUES (427, "Asignar", "es");
 INSERT INTO traducciones VALUES (427, "Assign", "en");
 
 
-/* PAQUETES */
+/* ALMACÉN-PAQUETES */
 INSERT INTO traducciones VALUES (428, "Paquetes", "es");
 INSERT INTO traducciones VALUES (428, "Packages", "en");
-INSERT INTO traducciones VALUES (429, "Id del paquete:", "es");
-INSERT INTO traducciones VALUES (429, "Package Id:", "en");
+INSERT INTO traducciones VALUES (429, "ID del paquete:", "es");
+INSERT INTO traducciones VALUES (429, "Package ID:", "en");
 INSERT INTO traducciones VALUES (430, "Fecha de modificación:", "es");
 INSERT INTO traducciones VALUES (430, "Modification date:", "en");
 INSERT INTO traducciones VALUES (431, "Lote asignado:", "es");
@@ -274,11 +274,6 @@ INSERT INTO traducciones VALUES (433, "Peso(kg):", "es");
 INSERT INTO traducciones VALUES (433, "Weight(kg):", "en");
 INSERT INTO traducciones VALUES (434, "Lotes para asignar", "es");
 INSERT INTO traducciones VALUES (434, "Batches to assign", "en");
-
-/* 
-INSERT INTO traducciones VALUES (, "", "es");
-INSERT INTO traducciones VALUES (, "", "en");
-*/
 
 /* CHOFERES */
 INSERT INTO traducciones VALUES (435, "Mostrar solo pendientes", "es");
@@ -293,7 +288,6 @@ INSERT INTO traducciones VALUES (439, "Todas las entregas", "es");
 INSERT INTO traducciones VALUES (439, "All deliveries", "en");
 INSERT INTO traducciones VALUES (440, "Mapa con ruta", "es");
 INSERT INTO traducciones VALUES (440, "Map with route", "en");
-
 
 
 /* POLÍTICA DE PRIVACIDAD*/
@@ -312,7 +306,46 @@ INSERT INTO traducciones VALUES (446, "Once GoTruck development is complete, emp
 INSERT INTO traducciones VALUES (447, "Si cree que alguna de estas ha sido infringida por alguno de nuestros empleados y que sus datos pueden encontrarse en peligro no dude en inmediatamente contactar con soporte. Nuestro email de soporte para usted es wistar@gotruck-support.com.", "es");
 INSERT INTO traducciones VALUES (447, "If you believe that any of these have been violated by any of our employees and that your data may be in danger, do not hesitate to immediately contact support. Our support email for you is wistar@gotruck-support.com.", "en");
 
+/* SEGUIMIENTO */
+INSERT INTO traducciones VALUES (448, "GoTruck - Seguimiento", "es");
+INSERT INTO traducciones VALUES (448, "GoTruck - Tracking", "en");
+INSERT INTO traducciones VALUES (449, "Revisa el estado de lotes en camino como sus paquetes asignados.", "es");
+INSERT INTO traducciones VALUES (449, "Check the status of batches on the way as well as their assigned packages.", "en");
+INSERT INTO traducciones VALUES (450, "Revisa el estado de un paquete a donde está yendo y ve en que lote está asignado.", "es");
+INSERT INTO traducciones VALUES (450, "Check the status of a package where it is going and see which batch it is assigned to.", "en");
 
+/* SEGUIMIENTO-LOTES*/
+INSERT INTO traducciones VALUES (451, "Seguimiento de lotes", "es");
+INSERT INTO traducciones VALUES (451, "Batch tracking", "en");
+INSERT INTO traducciones VALUES (452, "Buscar", "es");
+INSERT INTO traducciones VALUES (452, "Search", "en");
+INSERT INTO traducciones VALUES (453, "Información del lote", "es");
+INSERT INTO traducciones VALUES (453, "Batch information", "en");
+INSERT INTO traducciones VALUES (454, "Estado:", "es");
+INSERT INTO traducciones VALUES (454, "Status:", "en");
+INSERT INTO traducciones VALUES (455, "Camión asignado:", "es");
+INSERT INTO traducciones VALUES (455, "Assigned truck:", "en");
+INSERT INTO traducciones VALUES (456, "Conductor a cargo:", "es");
+INSERT INTO traducciones VALUES (456, "Driver in charge:", "en");
+INSERT INTO traducciones VALUES (457, "Paquetes asignados", "es");
+INSERT INTO traducciones VALUES (457, "Assigned packages", "en");
+INSERT INTO traducciones VALUES (458, "Buscar un lote", "es");
+INSERT INTO traducciones VALUES (458, "Search a batch", "en");
+
+/* SEGUMIENTO-PAQUETES*/
+INSERT INTO traducciones VALUES (459, "Seguimiento de paquetes", "es");
+INSERT INTO traducciones VALUES (459, "Package tracking", "en");
+INSERT INTO traducciones VALUES (460, "Informacion del paquete", "es");
+INSERT INTO traducciones VALUES (460, "Package information", "en");
+INSERT INTO traducciones VALUES (461, "Vista en el mapa", "es");
+INSERT INTO traducciones VALUES (461, "Map view", "en");
+INSERT INTO traducciones VALUES (462, "Buscar un paquete", "es");
+INSERT INTO traducciones VALUES (462, "Find a package", "en");
+
+/* 
+INSERT INTO traducciones VALUES (, "", "es");
+INSERT INTO traducciones VALUES (, "", "en");
+*/
 
 # Crear usuarios
 
