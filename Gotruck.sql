@@ -275,6 +275,27 @@ INSERT INTO traducciones VALUES (433, "Weight(kg):", "en");
 INSERT INTO traducciones VALUES (434, "Lotes para asignar", "es");
 INSERT INTO traducciones VALUES (434, "Batches to assign", "en");
 
+/* 
+INSERT INTO traducciones VALUES (, "", "es");
+INSERT INTO traducciones VALUES (, "", "en");
+*/
+
+/* CHOFERES */
+INSERT INTO traducciones VALUES (435, "Mostrar solo pendientes", "es");
+INSERT INTO traducciones VALUES (435, "Show only pending", "en");
+INSERT INTO traducciones VALUES (436, "Mostrar todos", "es");
+INSERT INTO traducciones VALUES (436, "Show all", "en");
+INSERT INTO traducciones VALUES (437, "¡Felicidades!", "es");
+INSERT INTO traducciones VALUES (437, "Congratulations!", "en");
+INSERT INTO traducciones VALUES (438, "No tienes entregas restantes por realizar.", "es");
+INSERT INTO traducciones VALUES (438, "You have no remaining deliveries to make.", "en");
+INSERT INTO traducciones VALUES (439, "Todas las entregas", "es");
+INSERT INTO traducciones VALUES (439, "All deliveries", "en");
+INSERT INTO traducciones VALUES (440, "Mapa con ruta", "es");
+INSERT INTO traducciones VALUES (440, "Map with route", "en");
+
+
+
 /* POLÍTICA DE PRIVACIDAD*/
 INSERT INTO traducciones VALUES (435, "Política de privacidad", "es");
 INSERT INTO traducciones VALUES (435, "Privacy policy", "en");
@@ -290,11 +311,6 @@ INSERT INTO traducciones VALUES (440, "Una vez finalizado el desarrollo de GoTru
 INSERT INTO traducciones VALUES (440, "Once GoTruck development is complete, employees will need to request a special access key to access the GoTruck system database or similar.", "en");
 INSERT INTO traducciones VALUES (441, "Si cree que alguna de estas ha sido infringida por alguno de nuestros empleados y que sus datos pueden encontrarse en peligro no dude en inmediatamente contactar con soporte. Nuestro email de soporte para usted es wistar@gotruck-support.com.", "es");
 INSERT INTO traducciones VALUES (441, "If you believe that any of these have been violated by any of our employees and that your data may be in danger, do not hesitate to immediately contact support. Our support email for you is wistar@gotruck-support.com.", "en");
-
-/* 
-INSERT INTO traducciones VALUES (, "", "es");
-INSERT INTO traducciones VALUES (, "", "en");
-*/
 
 
 
