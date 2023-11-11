@@ -232,11 +232,6 @@ INSERT INTO traducciones VALUES (413, "Packages", "en");
 INSERT INTO traducciones VALUES (414, "Administra los paquetes de las almacenes.", "es");
 INSERT INTO traducciones VALUES (414, "Manage warehouse packages.", "en");
 
-/* 
-INSERT INTO traducciones VALUES (, "", "es");
-INSERT INTO traducciones VALUES (, "", "en");
-*/
-
 /* LOTES */
 INSERT INTO traducciones VALUES (416, "Crear", "es");
 INSERT INTO traducciones VALUES (416, "Create", "en");
@@ -279,6 +274,29 @@ INSERT INTO traducciones VALUES (433, "Peso(kg):", "es");
 INSERT INTO traducciones VALUES (433, "Weight(kg):", "en");
 INSERT INTO traducciones VALUES (434, "Lotes para asignar", "es");
 INSERT INTO traducciones VALUES (434, "Batches to assign", "en");
+
+/* POLÍTICA DE PRIVACIDAD*/
+INSERT INTO traducciones VALUES (435, "Política de privacidad", "es");
+INSERT INTO traducciones VALUES (435, "Privacy policy", "en");
+INSERT INTO traducciones VALUES (436, "Wistar se compremete a asegurar la protección de los datos de QuickCarry.", "es");
+INSERT INTO traducciones VALUES (436, "Wistar is committed to ensuring the protection of QuickCarry data.", "en");
+INSERT INTO traducciones VALUES (437, "Esto se cumplirá de multiples maneras:", "es");
+INSERT INTO traducciones VALUES (437, "This will be accomplished in multiple ways:", "en");
+INSERT INTO traducciones VALUES (438, "Wistar no revisará datos ingresados en GoTruck.", "es");
+INSERT INTO traducciones VALUES (438, "Wistar will not review data entered into GoTruck.", "en");
+INSERT INTO traducciones VALUES (439, "Wistar se asegurará de que ningún empleado deje código malicioso que les de acceso al sistema GoTruck.", "es");
+INSERT INTO traducciones VALUES (439, "Wistar will ensure that no employees leave malicious code that gives them access to the GoTruck system.", "en");
+INSERT INTO traducciones VALUES (440, "Una vez finalizado el desarrollo de GoTruck, los empleados necesitarán pedir una llave de acceso especial para poder acceder a la base de datos del sistema GoTruck o similares.", "es");
+INSERT INTO traducciones VALUES (440, "Once GoTruck development is complete, employees will need to request a special access key to access the GoTruck system database or similar.", "en");
+INSERT INTO traducciones VALUES (441, "Si cree que alguna de estas ha sido infringida por alguno de nuestros empleados y que sus datos pueden encontrarse en peligro no dude en inmediatamente contactar con soporte. Nuestro email de soporte para usted es wistar@gotruck-support.com.", "es");
+INSERT INTO traducciones VALUES (441, "If you believe that any of these have been violated by any of our employees and that your data may be in danger, do not hesitate to immediately contact support. Our support email for you is wistar@gotruck-support.com.", "en");
+
+/* 
+INSERT INTO traducciones VALUES (, "", "es");
+INSERT INTO traducciones VALUES (, "", "en");
+*/
+
+
 
 # Crear usuarios
 
