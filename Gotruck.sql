@@ -1,4 +1,4 @@
-USE gotruck;
+USE wistar;
 
 CREATE TABLE personas(
     id bigint unsigned primary key,
