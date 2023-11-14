@@ -342,6 +342,110 @@ INSERT INTO traducciones VALUES (461, "Map view", "en");
 INSERT INTO traducciones VALUES (462, "Buscar un paquete", "es");
 INSERT INTO traducciones VALUES (462, "Find a package", "en");
 
+/* ADMINISTRACIÓN */
+INSERT INTO traducciones VALUES (463, "Usuarios", "es");
+INSERT INTO traducciones VALUES (463, "Users", "en");
+INSERT INTO traducciones VALUES (464, "Registra nuevos usuarios en el sistema, listalos y elimina o edita otros.", "es");
+INSERT INTO traducciones VALUES (464, "Register new users in the system, list them and delete or edit others.", "en");
+INSERT INTO traducciones VALUES (465, "Transporte", "es");
+INSERT INTO traducciones VALUES (465, "Transport", "en");
+INSERT INTO traducciones VALUES (466, "Define los vehículos que posees y asigna choferes a cargo de ellos.", "es");
+INSERT INTO traducciones VALUES (466, "Define the vehicles you own and assign drivers in charge of them.", "en");
+INSERT INTO traducciones VALUES (467, "Paquetería", "es");
+INSERT INTO traducciones VALUES (467, "Parcel", "en");
+INSERT INTO traducciones VALUES (468, "Lista paquetes o lotes, edita los que necesites o elimina los que desees.", "es");
+INSERT INTO traducciones VALUES (468, "List packages or batches, edit the ones you need or delete the ones you want.", "en");
+INSERT INTO traducciones VALUES (469, "Sedes", "es");
+INSERT INTO traducciones VALUES (469, "Headquarters", "en");
+INSERT INTO traducciones VALUES (470, "Define todas las sedes de la empresa para poder asignar camiones hacia esa dirección.", "es");
+INSERT INTO traducciones VALUES (470, "Define all company headquarters to be able to assign trucks to that address.", "en");
+
+/* ADMINISTRACIÓN-PAQUETERÍA*/
+INSERT INTO traducciones VALUES (471, "Administra los lotes de los almacenes.", "es");
+INSERT INTO traducciones VALUES (471, "Manage warehouse batches.", "en");
+INSERT INTO traducciones VALUES (472, "Administra los paquetes de los almacenes.", "es");
+INSERT INTO traducciones VALUES (472, "Manage warehouse packages.", "en");
+
+/* ADMINISTRACIÓN-LOTES*/
+INSERT INTO traducciones VALUES (473, "Eliminar lote", "es");
+INSERT INTO traducciones VALUES (473, "Delete batch", "en");
+INSERT INTO traducciones VALUES (474, "Desasignar", "es");
+INSERT INTO traducciones VALUES (474, "Unassign", "en");
+INSERT INTO traducciones VALUES (475, "Eliminar", "es");
+INSERT INTO traducciones VALUES (475, "Delete", "en");
+
+/* ADMINISTRACIÓN-PAQUETES */
+INSERT INTO traducciones VALUES (476, "Eliminar paquete", "es");
+INSERT INTO traducciones VALUES (476, "Delete package", "en");
+INSERT INTO traducciones VALUES (477, "Fecha de creación", "es");
+INSERT INTO traducciones VALUES (477, "Creation date", "en");
+
+/* ADMINISTRACIÓN-SEDES */
+INSERT INTO traducciones VALUES (478, "Crear alojamiento", "es");
+INSERT INTO traducciones VALUES (478, "Create accommodation", "en");
+
+/* ADMINISTRACIÓN-VEHÍCULOS*/
+INSERT INTO traducciones VALUES (479, "Vehículos", "es");
+INSERT INTO traducciones VALUES (479, "Vehicles", "en");
+INSERT INTO traducciones VALUES (480, "Mostrar solo...", "es");
+INSERT INTO traducciones VALUES (480, "Show only...", "en");
+INSERT INTO traducciones VALUES (481, "Camiones", "es");
+INSERT INTO traducciones VALUES (481, "Trucks", "en");
+INSERT INTO traducciones VALUES (482, "Pickups", "es");
+INSERT INTO traducciones VALUES (482, "Pickups", "en");
+INSERT INTO traducciones VALUES (483, "Reinciar filtro", "es");
+INSERT INTO traducciones VALUES (483, "Reset filter", "en");
+INSERT INTO traducciones VALUES (484, "Información del vehículo", "es");
+INSERT INTO traducciones VALUES (484, "Vehicle information", "en");
+INSERT INTO traducciones VALUES (485, "Tipo", "es");
+INSERT INTO traducciones VALUES (485, "Type", "en");
+INSERT INTO traducciones VALUES (486, "Conductor asignado", "es");
+INSERT INTO traducciones VALUES (486, "Assigned driver", "en");
+INSERT INTO traducciones VALUES (487, "Capacidad(t)", "es");
+INSERT INTO traducciones VALUES (487, "Capacity(t)", "en");
+INSERT INTO traducciones VALUES (488, "Lotes/Paquetes asignados", "es");
+INSERT INTO traducciones VALUES (488, "Assigned Lots/Packages", "en");
+INSERT INTO traducciones VALUES (489, "Lotes asignados", "es");
+INSERT INTO traducciones VALUES (489, "Assigned batches", "en");
+INSERT INTO traducciones VALUES (490, "Opciones", "es");
+INSERT INTO traducciones VALUES (490, "Options", "en");
+INSERT INTO traducciones VALUES (491, "Ver más información", "es");
+INSERT INTO traducciones VALUES (491, "See more information", "en");
+INSERT INTO traducciones VALUES (492, "Desasignar del vehículo", "es");
+INSERT INTO traducciones VALUES (492, "Unassign from vehicle", "en");
+
+/* ADMINSTRACIÓN-USUARIO*/
+INSERT INTO traducciones VALUES (495, "Mostrar todos", "es");
+INSERT INTO traducciones VALUES (495, "Show all", "en");
+INSERT INTO traducciones VALUES (496, "Buscar por", "es");
+INSERT INTO traducciones VALUES (496, "Look for", "en");
+INSERT INTO traducciones VALUES (497, "Nombre", "es");
+INSERT INTO traducciones VALUES (497, "Name", "en");
+INSERT INTO traducciones VALUES (498, "Borrar filtro", "es");
+INSERT INTO traducciones VALUES (498, "Delete filter", "en");
+INSERT INTO traducciones VALUES (499, "Información del usuario", "es");
+INSERT INTO traducciones VALUES (499, "User information", "en");
+INSERT INTO traducciones VALUES (500, "Datos modificables", "es");
+INSERT INTO traducciones VALUES (500, "Modifiable data", "en");
+INSERT INTO traducciones VALUES (501, "Nombre completo", "es");
+INSERT INTO traducciones VALUES (501, "Full name", "en");
+INSERT INTO traducciones VALUES (502, "email", "es");
+INSERT INTO traducciones VALUES (502, "e-mail", "en");
+INSERT INTO traducciones VALUES (503, "Estado", "es");
+INSERT INTO traducciones VALUES (503, "State", "en");
+INSERT INTO traducciones VALUES (504, "Rol/es", "es");
+INSERT INTO traducciones VALUES (504, "Role/s", "en");
+INSERT INTO traducciones VALUES (505, "Foto de perfil:", "es");
+INSERT INTO traducciones VALUES (505, "Profile picture:", "en");
+INSERT INTO traducciones VALUES (506, "Guardar cambios", "es");
+INSERT INTO traducciones VALUES (506, "Save Changes", "en");
+INSERT INTO traducciones VALUES (507, "Eliminar usuario", "es");
+INSERT INTO traducciones VALUES (507, "Delete user", "en");
+INSERT INTO traducciones VALUES (508, "Contraseña", "es");
+INSERT INTO traducciones VALUES (508, "Password", "en");
+INSERT INTO traducciones VALUES (509, "Confirmación", "es");
+INSERT INTO traducciones VALUES (509, "Confirmation", "en");
+
 /* 
 INSERT INTO traducciones VALUES (, "", "es");
 INSERT INTO traducciones VALUES (, "", "en");
