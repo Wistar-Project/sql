@@ -379,10 +379,14 @@ INSERT INTO traducciones VALUES (476, "Eliminar paquete", "es");
 INSERT INTO traducciones VALUES (476, "Delete package", "en");
 INSERT INTO traducciones VALUES (477, "Fecha de creación", "es");
 INSERT INTO traducciones VALUES (477, "Creation date", "en");
+INSERT INTO traducciones VALUES (510, "Información del paquete", "es");
+INSERT INTO traducciones VALUES (510, "Package information", "en");
 
 /* ADMINISTRACIÓN-SEDES */
-INSERT INTO traducciones VALUES (478, "Crear alojamiento", "es");
-INSERT INTO traducciones VALUES (478, "Create accommodation", "en");
+INSERT INTO traducciones VALUES (478, "Crear sede", "es");
+INSERT INTO traducciones VALUES (478, "Create headquarter", "en");
+INSERT INTO traducciones VALUES (511, "Dirección", "es");
+INSERT INTO traducciones VALUES (511, "Adress", "en");
 
 /* ADMINISTRACIÓN-VEHÍCULOS*/
 INSERT INTO traducciones VALUES (479, "Vehículos", "es");
@@ -404,7 +408,7 @@ INSERT INTO traducciones VALUES (486, "Assigned driver", "en");
 INSERT INTO traducciones VALUES (487, "Capacidad(t)", "es");
 INSERT INTO traducciones VALUES (487, "Capacity(t)", "en");
 INSERT INTO traducciones VALUES (488, "Lotes/Paquetes asignados", "es");
-INSERT INTO traducciones VALUES (488, "Assigned Lots/Packages", "en");
+INSERT INTO traducciones VALUES (488, "Assigned Batches/Packages", "en");
 INSERT INTO traducciones VALUES (489, "Lotes asignados", "es");
 INSERT INTO traducciones VALUES (489, "Assigned batches", "en");
 INSERT INTO traducciones VALUES (490, "Opciones", "es");
@@ -445,3 +449,30 @@ INSERT INTO traducciones VALUES (508, "Contraseña", "es");
 INSERT INTO traducciones VALUES (508, "Password", "en");
 INSERT INTO traducciones VALUES (509, "Confirmación", "es");
 INSERT INTO traducciones VALUES (509, "Confirmation", "en");
+INSERT INTO traducciones VALUES (512, "Editar usuario", "es");
+INSERT INTO traducciones VALUES (512, "Edit user", "en");
+INSERT INTO traducciones VALUES (513, "Crear usuario", "es");
+INSERT INTO traducciones VALUES (513, "Create user", "en");
+INSERT INTO traducciones VALUES (514, "Apellido", "es");
+INSERT INTO traducciones VALUES (514, "Last name", "en");
+INSERT INTO traducciones VALUES (515, "Rol", "es");
+INSERT INTO traducciones VALUES (515, "Role", "en");
+INSERT INTO traducciones VALUES (516, "Administrador", "es");
+INSERT INTO traducciones VALUES (516, "Administrator", "en");
+INSERT INTO traducciones VALUES (517, "Funcionario", "es");
+INSERT INTO traducciones VALUES (517, "Official", "en");
+INSERT INTO traducciones VALUES (518, "Conductor", "es");
+INSERT INTO traducciones VALUES (518, "Driver", "en");
+INSERT INTO traducciones VALUES (518, "Conductor", "es");
+INSERT INTO traducciones VALUES (518, "Driver", "en");
+INSERT INTO traducciones VALUES (519, "Confirmar", "es");
+INSERT INTO traducciones VALUES (519, "Confirm", "en");
+INSERT INTO traducciones VALUES (520, "Crear vehículo", "es");
+INSERT INTO traducciones VALUES (520, "Create vehicle", "en");
+INSERT INTO traducciones VALUES (521, "Camión", "es");
+INSERT INTO traducciones VALUES (521, "Truck", "en");
+INSERT INTO traducciones VALUES (522, "Peso (t)", "es");
+INSERT INTO traducciones VALUES (522, "Weight (t)", "en");
+INSERT INTO traducciones VALUES (523, "Eliminar vehículo", "es");
+INSERT INTO traducciones VALUES (523, "Remove vehicle", "en");
+
