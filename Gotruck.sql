@@ -397,7 +397,7 @@ INSERT INTO traducciones VALUES (481, "Camiones", "es");
 INSERT INTO traducciones VALUES (481, "Trucks", "en");
 INSERT INTO traducciones VALUES (482, "Pickups", "es");
 INSERT INTO traducciones VALUES (482, "Pickups", "en");
-INSERT INTO traducciones VALUES (483, "Reinciar filtro", "es");
+INSERT INTO traducciones VALUES (483, "Reiniciar filtro", "es");
 INSERT INTO traducciones VALUES (483, "Reset filter", "en");
 INSERT INTO traducciones VALUES (484, "Información del vehículo", "es");
 INSERT INTO traducciones VALUES (484, "Vehicle information", "en");
