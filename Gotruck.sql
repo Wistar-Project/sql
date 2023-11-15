@@ -176,7 +176,7 @@ INSERT INTO traducciones VALUES (100, "Sign out", "en");
 
 /* GENERAL */
 INSERT INTO traducciones VALUES (415, "Volver", "es");
-INSERT INTO traducciones VALUES (415, "Back", "en");
+INSERT INTO traducciones VALUES (415, "Go back", "en");
 
 /* FOOTER */
 INSERT INTO traducciones VALUES (200, "Política y privacidad", "es");
