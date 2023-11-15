@@ -422,7 +422,7 @@ INSERT INTO traducciones VALUES (492, "Unassign from vehicle", "en");
 INSERT INTO traducciones VALUES (495, "Mostrar todos", "es");
 INSERT INTO traducciones VALUES (495, "Show all", "en");
 INSERT INTO traducciones VALUES (496, "Buscar por", "es");
-INSERT INTO traducciones VALUES (496, "Look for", "en");
+INSERT INTO traducciones VALUES (496, "Search by", "en");
 INSERT INTO traducciones VALUES (497, "Nombre", "es");
 INSERT INTO traducciones VALUES (497, "Name", "en");
 INSERT INTO traducciones VALUES (498, "Borrar filtro", "es");
