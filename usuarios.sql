@@ -3,7 +3,7 @@ use wistar;
 -- GRANT SELECT ON traducciones TO "wistar-traducciones";
 
 /* USUARIOS Y PERMISOS 
-- Api de autenticación: cristian.aguirre
+- Api de autenticación: christian.aguirre
 - Api de almacenes: francisco.cazeneuve
 - Api de tránsito: wistar-transito
 - Api de traducciones: wistar-traducciones
