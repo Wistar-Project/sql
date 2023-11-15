@@ -463,8 +463,6 @@ INSERT INTO traducciones VALUES (517, "Funcionario", "es");
 INSERT INTO traducciones VALUES (517, "Official", "en");
 INSERT INTO traducciones VALUES (518, "Conductor", "es");
 INSERT INTO traducciones VALUES (518, "Driver", "en");
-INSERT INTO traducciones VALUES (518, "Conductor", "es");
-INSERT INTO traducciones VALUES (518, "Driver", "en");
 INSERT INTO traducciones VALUES (519, "Confirmar", "es");
 INSERT INTO traducciones VALUES (519, "Confirm", "en");
 INSERT INTO traducciones VALUES (520, "Crear vehículo", "es");
